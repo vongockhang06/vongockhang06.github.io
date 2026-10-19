@@ -4,7 +4,6 @@
     <head class="title">
         <link rel="stylesheet" href="../css/portfolio.css">
         <meta charset="UTF-8">
-
     </head>
     <body>
         <header class="title">
@@ -19,10 +18,58 @@
                     <p><strong>Phone: </strong> 0983-592-275</p>
                     <p><strong>Linkedin: </strong><a href="https://www.linkedin.com/in/khangvo06022006" target="_blank">My Linkedin</a></p>
                     <p><strong>Github: </strong> <a href="https://github.com/vongockhang06" target="_blank">My Github</a></p>
-                    <p></p>
                 </div>
             </div>
         </section>
-
+        <div class="container">
+            <div class="edu_and_language">
+                <section class="Education">
+                    <h3>Education</h3>
+                    <p>Providence University: In progess</p>
+                    <small style="font-style: italic;">Expected graduation: 2028</small>
+                    <ul>
+                        <li> Freshman: 95.7/100 </li>
+                        <li> Sophomore: 95.61/100</li>
+                    </ul>
+                </section>
+                <section class="Language">
+                    <h3>Language</h3>
+                    <ul>
+                    <li>TOEIC - English: 905/990 (2024) </li>
+                    <li>TOCLF - Chinese: A2 (2024)</li>
+                    </ul>
+                </section>
+            </div>
+            <section class="Skills">
+                <h3> My skills </h3>
+                <ul>
+                    <li> Familiar with Python</li>
+                    <li> Familiar with SQL - PostgreSQL</li>
+                    <li> Familiar with Git/Github</li>
+                    <li> Intermediate Linux - Ubuntu</li>
+                    <li> Basic HTML, CSS</li>
+                    <li> Basic Docker</li>
+                </ul>
+            </section>
+        </div>
+        <section class="Project">
+            <h3>Project</h3>
+            <p>Crypto Price ETL Pipeline:
+                Built a cryptocurrency price ETL Pipeline using Python, Docker Compose, and PostgreSQL. 
+                Fetched prices and 24-hour price changes for Bitcoin, Ethereum, 
+                and Binance Coin via the CoinGecko API, 
+                and stored the data in PostgreSQL after data cleaning 
+                and format conversion. 
+            <p>
+            <p>Key features</p>
+            <ul>
+                <li>Designed a modular ETL workflow: Extract => Transform => Load</li>
+                <li>Integrated REST API using Requests and handled API errors</li>
+                <li>Built a multi-container architecture for Application and Database using Docker Compose</li>
+                <li>Managed API Keys and Database Configuration using <strong>.env</strong></li>
+                <li>Implemented Database Connection Retry and centralized Logging</li>
+            </ul>
+            <p>Reference Link: <a href="https://github.com/vongockhang06/docker_practice/tree/master/small_proj" target="_blank">ETL pipeline</a></p>
+        </section>
     </body>
 </html>
