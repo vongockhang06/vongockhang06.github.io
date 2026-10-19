@@ -1,11 +1,116 @@
-.title {
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 18px;
-    font-weight: bold;
-    font-style: italic;
+/* Portfolio styles */
+:root {
+  color-scheme: light;
+  --bg: #f4f7fb;
+  --surface: #ffffff;
+  --text: #172033;
+  --muted: #5d687b;
+  --accent: #2563eb;
+  --accent-soft: #e8efff;
+  --border: #e1e7f0;
+  --shadow: 0 14px 35px rgba(23, 32, 51, .08);
 }
-.container {
-    display: flex;
-    gap: 20px;
+html { scroll-behavior: smooth; scroll-padding-top: 1.5rem; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: radial-gradient(circle at top left, #e8efff 0, transparent 34rem), var(--bg);
+  color: var(--text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
 }
+a { color: var(--accent); text-decoration: none; font-weight: 600; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 3px solid #93b4ff; outline-offset: 3px; }
+header.title {
+  padding: 3.5rem 1.25rem 2.25rem;
+  text-align: center;
+}
+header.title h1 {
+  margin: 0;
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  line-height: 1.15;
+  letter-spacing: -.045em;
+  font-weight: 800;
+}
+header.title h1::after {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 4px;
+  margin: 1.1rem auto 0;
+  border-radius: 99px;
+  background: var(--accent);
+}
+.introduction, body > .container, .Project {
+  width: min(100% - 2rem, 980px);
+  margin: 0 auto 1.5rem;
+}
+.introduction, .edu_and_language, .Skills, .Project {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+.introduction { padding: clamp(1.25rem, 4vw, 2.5rem); }
+.introduction .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.5rem, 5vw, 3.5rem);
+}
+.my_image {
+  display: block;
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  border: 5px solid var(--accent-soft);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, .16);
+}
+.brief_introduction p { margin: .45rem 0; overflow-wrap: anywhere; }
+.brief_introduction strong { display: inline-block; min-width: 5.2rem; }
+body > .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+.edu_and_language { padding: 1.5rem; display: grid; gap: 1.5rem; }
+.Education, .Language { min-width: 0; }
+.Skills { padding: 1.5rem; }
+.Project { padding: clamp(1.25rem, 4vw, 2rem); margin-bottom: 4rem; }
+h3 {
+  margin: 0 0 1rem;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  letter-spacing: -.02em;
+}
+h3::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 1.15em;
+  margin-right: .65rem;
+  vertical-align: -.15em;
+  border-radius: 5px;
+  background: var(--accent);
+}
+p { margin: .65rem 0; }
+ul { padding-left: 1.3rem; margin: .6rem 0; }
+li { padding-left: .2rem; margin: .35rem 0; }
+li::marker { color: var(--accent); }
+.Project > p:first-of-type { color: var(--muted); }
+.Project ul { padding: 1rem 1.25rem 1rem 2.3rem; background: var(--bg); border-radius: 14px; }
+.Project > p:last-child { margin-top: 1.25rem; }
+small { color: var(--muted); }
+@media (max-width: 680px) {
+  header.title { padding-top: 2.5rem; }
+  body > .container { grid-template-columns: 1fr; }
+  .introduction .container { flex-direction: column; text-align: center; }
+  .brief_introduction { width: 100%; }
+  .brief_introduction strong { min-width: 0; }
+  .my_image { width: 170px; height: 210px; }
+  }
