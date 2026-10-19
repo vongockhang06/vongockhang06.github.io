@@ -1,23 +1,27 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en" title="Khang's portfolio">
-    
-    <head class="title">
-        <link rel="stylesheet" href="../css/portfolio.css">
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <header class="title">
-            <h1> About me </h1>
-        </header>
-        <section class="introduction">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vo Ngoc Khang's portfolio, skills, education, and projects.">
+    <title>Khang's Portfolio</title>
+    <link rel="stylesheet" href="../css/portfolio.css">
+    <script src="../javascript/portfolio.js" defer></script>
+</head>
+<body>
+    <header class="title">
+        <h1>About me</h1>
+    </header>
+    <main>
+        <section class="introduction" aria-label="Introduction">
             <div class="container">
-                <img class="my_image" src="../Photo.jpg" width="200" height="275">
+                <img class="my_image" src="../Photo.jpg" alt="Portrait of Vo Ngoc Khang" width="200" height="275">
                 <div class="brief_introduction">
-                    <p><strong>Name: </strong> Vo Ngoc Khang</p>
-                    <p><strong>Email: </strong> vongockhang2006@gmail.com</p>
-                    <p><strong>Phone: </strong> 0983-592-275</p>
-                    <p><strong>Linkedin: </strong><a href="https://www.linkedin.com/in/khangvo06022006" target="_blank">My Linkedin</a></p>
-                    <p><strong>Github: </strong> <a href="https://github.com/vongockhang06" target="_blank">My Github</a></p>
+                    <p><strong>Name:</strong> Vo Ngoc Khang</p>
+                    <p><strong>Email:</strong> vongockhang2006@gmail.com</p>
+                    <p><strong>Phone:</strong> 0983-592-275</p>
+                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/khangvo06022006" target="_blank" rel="noopener noreferrer">My LinkedIn</a></p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/vongockhang06" target="_blank" rel="noopener noreferrer">My GitHub</a></p>
                 </div>
             </div>
         </section>
@@ -25,51 +29,47 @@
             <div class="edu_and_language">
                 <section class="Education">
                     <h3>Education</h3>
-                    <p>Providence University: In progess</p>
-                    <small style="font-style: italic;">Expected graduation: 2028</small>
+                    <p>Providence University: In progress</p>
+                    <small><em>Expected graduation: 2028</em></small>
                     <ul>
-                        <li> Freshman: 95.7/100 </li>
-                        <li> Sophomore: 95.61/100</li>
+                        <li>Freshman: 95.7/100</li>
+                        <li>Sophomore: 95.61/100</li>
                     </ul>
                 </section>
                 <section class="Language">
                     <h3>Language</h3>
                     <ul>
-                    <li>TOEIC - English: 905/990 (2024) </li>
-                    <li>TOCLF - Chinese: A2 (2024)</li>
+                        <li>TOEIC - English: 905/990 (2024)</li>
+                        <li>TOCFL - Chinese: A2 (2024)</li>
                     </ul>
                 </section>
             </div>
             <section class="Skills">
-                <h3> My skills </h3>
+                <h3>My skills</h3>
                 <ul>
-                    <li> Familiar with Python</li>
-                    <li> Familiar with SQL - PostgreSQL</li>
-                    <li> Familiar with Git/Github</li>
-                    <li> Intermediate Linux - Ubuntu</li>
-                    <li> Basic HTML, CSS</li>
-                    <li> Basic Docker</li>
+                    <li>Familiar with Python</li>
+                    <li>Familiar with SQL - PostgreSQL</li>
+                    <li>Familiar with Git/GitHub</li>
+                    <li>Intermediate Linux - Ubuntu</li>
+                    <li>Basic HTML, CSS</li>
+                    <li>Basic Docker</li>
                 </ul>
             </section>
         </div>
         <section class="Project">
             <h3>Project</h3>
-            <p>Crypto Price ETL Pipeline:
-                Built a cryptocurrency price ETL Pipeline using Python, Docker Compose, and PostgreSQL. 
-                Fetched prices and 24-hour price changes for Bitcoin, Ethereum, 
-                and Binance Coin via the CoinGecko API, 
-                and stored the data in PostgreSQL after data cleaning 
-                and format conversion. 
-            <p>
-            <p>Key features</p>
+            <p><strong>Crypto Price ETL Pipeline</strong></p>
+            <p>Built a cryptocurrency price ETL pipeline using Python, Docker Compose, and PostgreSQL. Fetched prices and 24-hour price changes for Bitcoin, Ethereum, and Binance Coin via the CoinGecko API, and stored the data in PostgreSQL after data cleaning and format conversion.</p>
+            <p><strong>Key features</strong></p>
             <ul>
-                <li>Designed a modular ETL workflow: Extract => Transform => Load</li>
-                <li>Integrated REST API using Requests and handled API errors</li>
-                <li>Built a multi-container architecture for Application and Database using Docker Compose</li>
-                <li>Managed API Keys and Database Configuration using <strong>.env</strong></li>
-                <li>Implemented Database Connection Retry and centralized Logging</li>
+                <li>Designed a modular ETL workflow: Extract → Transform → Load</li>
+                <li>Integrated a REST API using Requests and handled API errors</li>
+                <li>Built a multi-container architecture for the application and database using Docker Compose</li>
+                <li>Managed API keys and database configuration using <strong>.env</strong></li>
+                <li>Implemented database connection retry and centralized logging</li>
             </ul>
-            <p>Reference Link: <a href="https://github.com/vongockhang06/docker_practice/tree/master/small_proj" target="_blank">ETL pipeline</a></p>
+            <p>Reference link: <a href="https://github.com/vongockhang06/docker_practice/tree/master/small_proj" target="_blank" rel="noopener noreferrer">ETL pipeline on GitHub</a></p>
         </section>
-    </body>
+    </main>
+</body>
 </html>
